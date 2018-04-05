@@ -1,0 +1,211 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:2:1: style: Use two spaces to indent, never tabs.
+	xminFahrenheit <- xmin*9/5 + 32
+^
+Problem_2.R:2:2: style: Use two spaces to indent, never tabs.
+ 	Max_temp_Fahr = xmax[seq(1:5)]*9/5+32,
+ ^
+Problem_2.R:2:6: style: Put spaces around all infix operators.
+xmin <-c(23.0, 20.5, 28.2, 20.3, 22.4, 17.2, 18.2)
+     ^~~
+Problem_2.R:3:6: style: Put spaces around all infix operators.
+xmax <-c(25.0, 22.8, 31.2, 27.3, 28.4, 20.2, 24.1)
+     ^~~
+Problem_2.R:6:5: style: Put spaces around all infix operators.
+dff <-xmax-xmin
+    ^~~
+Problem_2.R:6:11: style: Put spaces around all infix operators.
+dff <-xmax-xmin
+         ~^~
+Problem_2.R:10:8: style: Put spaces around all infix operators.
+avgmin <-mean(xmin)
+       ^~~
+Problem_2.R:22:13: style: Put spaces around all infix operators.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+            ^~~
+Problem_2.R:22:17: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                ^~~~~
+Problem_2.R:22:24: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                       ^~~~~
+Problem_2.R:22:31: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                              ^~~~~
+Problem_2.R:22:38: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                     ^~~~~
+Problem_2.R:22:45: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                            ^~~~~
+Problem_2.R:22:51: style: Commas should never have a space before.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                 ~^
+Problem_2.R:22:53: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                    ^~~~~
+Problem_2.R:22:59: style: Commas should never have a space before.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                         ~^
+Problem_2.R:22:61: style: Only use double-quotes.
+names(xmin) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                            ^~~~~
+Problem_2.R:23:13: style: Put spaces around all infix operators.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+            ^~~
+Problem_2.R:23:17: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                ^~~~~
+Problem_2.R:23:24: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                       ^~~~~
+Problem_2.R:23:31: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                              ^~~~~
+Problem_2.R:23:38: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                     ^~~~~
+Problem_2.R:23:45: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                            ^~~~~
+Problem_2.R:23:51: style: Commas should never have a space before.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                 ~^
+Problem_2.R:23:53: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                    ^~~~~
+Problem_2.R:23:59: style: Commas should never have a space before.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                         ~^
+Problem_2.R:23:61: style: Only use double-quotes.
+names(xmax) <-c('Mon', 'Tue', 'Wed', 'Thu', 'Fri' , 'Sat' , 'Sun')
+                                                            ^~~~~
+Problem_2.R:26:13: style: Put spaces around all infix operators.
+temperature <-data.frame(xmin,xmax)
+            ^~~
+Problem_2.R:26:31: style: Commas should always have a space after.
+temperature <-data.frame(xmin,xmax)
+                              ^
+Problem_2.R:30:9: style: Variable and function names should be all lowercase.
+	xminFahrenheit <- xmin*9/5 + 32
+        ^~~~~~~~~~~~~~
+Problem_2.R:30:24: style: Put spaces around all infix operators.
+	xminFahrenheit <- xmin*9/5 + 32
+                      ~^~~
+Problem_2.R:30:31: style: Put spaces around all infix operators.
+	xminFahrenheit <- xmin*9/5 + 32
+                              ^~
+Problem_2.R:30:33: style: Put spaces around all infix operators.
+	xminFahrenheit <- xmin*9/5 + 32
+                               ~^~
+Problem_2.R:34:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit <-data.frame(
+^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:34:23: style: Put spaces around all infix operators.
+temperatureFahrenheit <-data.frame(
+                      ^~~
+Problem_2.R:35:23: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax*9/5 + 32, 
+                     ~^~
+Problem_2.R:35:25: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax*9/5 + 32, 
+                       ~^~
+Problem_2.R:35:33: style: Trailing whitespace is superfluous.
+  Max_temp_Fahr = xmax*9/5 + 32, 
+                                ^
+Problem_2.R:36:23: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin*9/5 + 32)
+                     ~^~
+Problem_2.R:36:25: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin*9/5 + 32)
+                       ~^~
+Problem_2.R:38:1: style: Variable and function names should be all lowercase.
+FivedaytempFahrenheit  <- data.frame(
+^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:39:23: style: Put spaces around all infix operators.
+ 	Max_temp_Fahr = xmax[seq(1:5)]*9/5+32,
+                     ~^~
+Problem_2.R:39:39: style: Put spaces around all infix operators.
+ 	Max_temp_Fahr = xmax[seq(1:5)]*9/5+32,
+                                     ~^~
+Problem_2.R:39:41: style: Put spaces around all infix operators.
+ 	Max_temp_Fahr = xmax[seq(1:5)]*9/5+32,
+                                       ~^~
+Problem_2.R:40:33: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(1:5)]*9/5+32)
+                               ~^~
+Problem_2.R:40:35: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(1:5)]*9/5+32)
+                                 ~^~
+Problem_2.R:40:37: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(1:5)]*9/5+32)
+                                   ~^~
+Problem_2.R:42:1: style: Variable and function names should be all lowercase.
+FivedaytempFahrenheit <- data.frame(
+^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:43:40: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax[seq(length(xmax)-2)]*9/5+32,
+                                      ~^~
+Problem_2.R:43:44: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax[seq(length(xmax)-2)]*9/5+32,
+                                          ~^~
+Problem_2.R:43:46: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax[seq(length(xmax)-2)]*9/5+32,
+                                            ~^~
+Problem_2.R:43:48: style: Put spaces around all infix operators.
+  Max_temp_Fahr = xmax[seq(length(xmax)-2)]*9/5+32,
+                                              ~^~
+Problem_2.R:44:40: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(length(xmin)-2)]*9/5+32)
+                                      ~^~
+Problem_2.R:44:44: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(length(xmin)-2)]*9/5+32)
+                                          ~^~
+Problem_2.R:44:46: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(length(xmin)-2)]*9/5+32)
+                                            ~^~
+Problem_2.R:44:48: style: Put spaces around all infix operators.
+  Min_temp_Fahr = xmin[seq(length(xmin)-2)]*9/5+32)
+                                              ~^~
+Problem_2.R:49:3: style: Variable and function names should be all lowercase.
+  xminFahrenheit <- xmin * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:49:30: style: Put spaces around all infix operators.
+  xminFahrenheit <- xmin * (9/5) + 32
+                            ~^~
+Problem_2.R:50:3: style: Variable and function names should be all lowercase.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+  ^~~~~~~~~~~~~~
+Problem_2.R:50:30: style: Put spaces around all infix operators.
+  xmaxFahrenheit <- xmax * (9/5) + 32
+                            ~^~
+Problem_2.R:53:1: style: Variable and function names should be all lowercase.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:53:43: style: Only use double-quotes.
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                          ^~~~~~~~~~~~~~~~
+Problem_2.R:53:61: error: unexpected INCOMPLETE_STRING
+temperaturesFahrenheit <- temeratures[, c('xminFahrenheit', 'xmaxFahrenheit)]
+                                                            ^
+> 
+> 
